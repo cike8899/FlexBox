@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            width: 200px;
+            height: 200px;
+            background: rgb(200, 200, 200);
+            flex-direction: column;
+            align-content: space-between;
+        }
+
+        .row {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .item {
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin: 4px;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="row">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+    <div class="row">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+</div>
+</body>
+</html>

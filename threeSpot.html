@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>threeSpot</title>
+    <style>
+        .box {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            background: rgb(200, 200, 200);
+            justify-content: space-between;
+        }
+        .item {
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin: 4px;
+
+            background-color: #333;
+        }
+
+        .item:nth-child(2) {
+            align-self: center;
+        }
+
+        .item:nth-child(3) {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <span class="item">6</span>
+    <span class="item">6</span>
+    <span class="item">6</span>
+</div>
+</body>
+</html>
