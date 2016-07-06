@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>alignContent</title>
+    <style>
+
+        #main {
+            width: 70px;
+            height: 300px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        #main div {
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+        }
+
+        .box {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-direction: row;
+            width: 200px;
+            height: 200px;
+            margin: 0;
+            padding: 0;
+            border-radius: 5px;
+            list-style: none;
+            background-color: #eee;
+        }
+
+        .box li {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            background: #aaa;
+            text-align: center;
+        }
+
+        #box {
+            -webkit-align-content: flex-start;
+            align-content: flex-start;
+        }
+
+        #box2 {
+            -webkit-align-content: flex-end;
+            align-content: flex-end;
+        }
+
+        #box3 {
+            -webkit-align-content: center;
+            align-content: center;
+        }
+
+        #box4 {
+            -webkit-align-content: space-between;
+            align-content: space-between;
+        }
+
+        #box5 {
+            -webkit-align-content: space-around;
+            align-content: space-around;
+        }
+
+        #box6 {
+            -webkit-align-content: stretch;
+            align-content: stretch;
+        }
+    </style>
+</head>
+<body>
+<!--align-content 属性在弹性容器内的各项没有占用交叉轴上所有可用的空间时对齐容器内的各项（垂直）。-->
+<!--提示：使用 justify-content 属性对齐主轴上的各项（水平）。-->
+<!--注意：容器内必须有多行的项目，该属性才能渲染出效果。-->
+<!--用了这个属性align-self 就用不了了-->
+<!--align-self 属性可重写灵活容器的 align-items 属性。-->
+<div id="main">
+    <div style="background-color:coral;"></div>
+    <div style="background-color:lightblue;"></div>
+    <div style="background-color:pink;"></div>
+</div>
+
+<h2>align-content:flex-start</h2>
+<ul id="box" class="box">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <li>e</li>
+    <li>f</li>
+</ul>
+<h2>align-content:flex-end</h2>
+<ul id="box2" class="box">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <li>e</li>
+    <li>f</li>
+</ul>
+<h2>align-content:center</h2>
+<ul id="box3" class="box">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <li>e</li>
+    <li>f</li>
+</ul>
+<h2>align-content:space-between</h2>
+<ul id="box4" class="box">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <li>e</li>
+    <li>f</li>
+</ul>
+<h2>align-content:space-around</h2>
+<ul id="box5" class="box">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <li>e</li>
+    <li>f</li>
+</ul>
+<h2>align-content:strecth</h2>
+<ul id="box6" class="box">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <li>e</li>
+    <li>f</li>
+</ul>
+</body>
+</html>
