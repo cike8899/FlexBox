@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>streamingLayout.html</title>
+    <style>
+        .parent {
+            width: 200px;
+            height: 150px;
+            background-color: black;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start;
+            margin: 0 auto;
+        }
+
+        .child {
+            box-sizing: border-box;
+            background-color: white;
+            flex: 0 0 25%;
+            height: 50px;
+            border: 1px solid red;
+        }
+
+        .wrap {
+            margin: 0 auto;
+            width: 80vw;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h3>流式布局</h3>
+    <div class="parent">
+        <div class="child">
+        </div>
+        <div class="child">
+        </div>
+        <div class="child">
+        </div>
+        <div class="child">
+        </div>
+        <div class="child">
+        </div>
+        <div class="child">
+        </div>
+        <div class="child">
+        </div>
+        <div class="child">
+        </div>
+        <div class="child">
+        </div>
+        <div class="child">
+        </div>
+    </div>
+</div>
+</body>
+</html>

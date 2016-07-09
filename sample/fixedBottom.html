@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fixedBottom</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 62.5%;
+        }
+
+        .Site {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            font-size: 2em;
+            margin: 0 auto;
+            width: 90vw;
+        }
+
+        .Site-content {
+            flex: 1;
+            background: rgb(153, 255, 102);
+        }
+
+        header {
+            height: 10vh;
+            background: rgb(200, 100, 211);
+        }
+
+        footer {
+            height: 10vh;
+            background: rgb(255, 102, 102);
+        }
+
+        .Site-content, header, footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<body>
+<div class="Site">
+    <header>header</header>
+    <main class="Site-content">center</main>
+    <footer>bottom</footer>
+</div>
+</body>
+</body>
+</html>
